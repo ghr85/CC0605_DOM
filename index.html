@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Gordon's Garden Gathering Gizmo</title>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" href="css/furious_styles.css">
+</head>
+<body>
+  <header>
+  <h1 class = 'title'>Gordon's Garden Gathering Gizmo</h1>
+  <h2 class = 'page-intent'>Current Plant Inventory</h2>
+  <p class = 'description'>A place to track all of your plants and their care habits in one place</p>
+</header>
+<section class-'main'>
+  <p class = 'instruction'>Enter your plant details below and watch your collection grow</p>
+  <div class='garden-form'>
+    <form id='plant-input-form'>
+      <div class='common-name'>
+        <label for='common-name'>Common Name:</label>
+        <input type='text' id='cmn-name-input' ></input>
+      </div>
+      <div class='latin-name'>
+        <label for='latin-name'>Latin Name:</label>
+        <input type='text' id='ltn-name-input' ></input>
+      </div>
+      <div class='sunshine'>
+        <label for='sun-select'>Sun Type:</label>
+        <select id='sun-select'>
+          <option value='full-sun'>Full Sun</option>
+          <option value='part-sun'>Part Sun</option>
+          <option value='full-shade'>Full Shade</option>
+          <option value='part-shade'>Part Shade</option>
+        </select>
+      </div>
+      <div class='soil-type'>
+        <div class='soil-consist'>
+          <p>Soil Structure</p>
+          <label for='soil-sandy'>Sandy</label>
+          <input type='checkbox' id='soil-sandy' value='sandy'/>
+          <label for='soil-loam'>Loam</label>
+          <input type='checkbox' id='soil-loam' value='loam'>
+          <label for='soil-chalk'>Chalk</label>
+          <input type='checkbox' id='soil-chalk' value='chalk'>
+          <label for='soil-clay'>Clay</label>
+          <input type='checkbox' id='soil-clay' value='clay'>
+        </div>
+        <div class='soil-moist'>
+          <p>Soil Moisture</p>
+          <label for='moist-poor'>Poorly Drained</label>
+          <input type='radio' id='moist-poor' value='Poorly Drained' name='moisture'>
+          <label for='moist-well'>Well Drained</label>
+          <input type='radio' id='moist-well' value='Well Drained' name='moisture'>
+          <label for='moist-moist'>Moist yet drained</label>
+          <input type='radio' id='moist-moist' value='Moist but Drained' name='moisture'>
+          <div class='button-block'>
+            <input type='submit' value='Add to Plant Tracker'/>
+            <input type='reset' value='Reset Plant Form'/>
+            <input type='button' value='Clear Plant Tracker'/>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class='garden-list'>
+  </div>
+</section>
+</body>
