@@ -10,10 +10,15 @@ With any luck this will tie into a future app and API which might help me.
 
 #### Order of Approach
 Create Web page - structure is key here as you'll be accessing DOM elements.
+
 Give anything that needs accessed/will rigger an ID for ease.
+
 Once this is done create your context of DOMContentLoaded.
+
 Assign variable to elements/values/properties which need to be accessed/modified
+
 Create events to function as triggers.
+
 Refactor where possible
 
 
