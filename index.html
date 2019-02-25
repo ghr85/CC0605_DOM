@@ -14,19 +14,19 @@
 </header>
 <section class-'main'>
   <p class = 'instruction'>Enter your plant details below and watch your collection grow</p>
-  <div class='garden-form'>
-    <form id='plant-input-form'>
+  <div class='garden_form'>
+    <form name = 'plant_input_form' id='plant_input_form'>
       <div class='common-name'>
-        <label for='common-name'>Common Name:</label>
-        <input type='text' id='cmnnameinput' ></input>
+        <label for='common_name'>Common Name:</label>
+        <input type='text' id='common_name' ></input>
       </div>
       <div class='latin-name'>
         <label for='latin-name'>Latin Name:</label>
-        <input type='text' id='ltnnameinput' ></input>
+        <input type='text' id='latin_name' ></input>
       </div>
       <div class='sunshine'>
-        <label for='sun-select'>Sun Type:</label>
-        <select id='sunselect'>
+        <label for='sun_select'>Sun Type:</label>
+        <select id='sun_select' class='options'>
           <option value='fullsun'>Full Sun</option>
           <option value='partsun'>Part Sun</option>
           <option value='fullshade'>Full Shade</option>
@@ -34,34 +34,35 @@
         </select>
       </div>
       <div class='soil-type'>
-        <div class='soil-consist'>
+        <div class='soil-select'>
           <p>Soil Structure</p>
           <label for='soilsandy'>Sandy</label>
-          <input type='checkbox' id='soilsandy' value='sandy'/>
+          <input class='options' type='checkbox' id='soilsandy' value='sandy' name='soilSelect'/>
           <label for='soilloam'>Loam</label>
-          <input type='checkbox' id='soilloam' value='loam'>
+          <input class='options' type='checkbox' id='soilloam' value='loam' name='soilSelect'>
           <label for='soilchalk'>Chalk</label>
-          <input type='checkbox' id='soilchalk' value='chalk'>
+          <input class='options' type='checkbox' id='soilchalk' value='chalk'name='soilSelect'>
           <label for='soilclay'>Clay</label>
-          <input type='checkbox' id='soilclay' value='clay'>
+          <input class='options' type='checkbox' id='soilclay' value='clay' name='soilSelect'>
         </div>
         <div class='soil-moist'>
           <p>Soil Moisture</p>
           <label for='moistpoor'>Poorly Drained</label>
-          <input type='radio' id='moistpoor' value='Poorly Drained' name='moisture'>
+          <input class='options' type='radio' id='moistpoor' value='Poorly Drained' name='moistSelect'>
           <label for='moistwell'>Well Drained</label>
-          <input type='radio' id='moistwell' value='Well Drained' name='moisture'>
+          <input class='options' type='radio' id='moistwell' value='Well Drained' name='moistSelect'>
           <label for='moistmoist'>Moist yet drained</label>
-          <input type='radio' id='moistmoist' value='Moist but Drained' name='moisture'>
+          <input class='options' type='radio' id='moistmoist' value='Moist but Drained' name='moistSelect'>
           <div class='button-block'>
             <input type='submit' value='Add to Plant Tracker'/>
             <input type='reset' value='Reset Plant Form'/>
-            <input type='button' value='Clear Plant Tracker'/>
+            <button onlick='deleteAll()' value='Remove'/>
           </div>
         </div>
       </div>
     </form>
   </div>
+  <button id='delete-all'>Remove</button>
   <div id='garden-list'>
   </div>
 </section>
